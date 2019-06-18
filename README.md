@@ -197,4 +197,4 @@ To enter "Interactive Mode" run:
 ```bash
 npm run interactive
 ```
-**NOTE:** Make sure you change the token value in ```./tools/interactive.js``` or this will not work.
+**NOTE:** Make sure you create a ```.env``` file change the token value or this will not work.

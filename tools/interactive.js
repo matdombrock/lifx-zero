@@ -1,4 +1,5 @@
-
+require('dotenv').config()
 global.lifx = require('../LIFX-Wrapper'); 
-global.lifx.setToken('cf7348414176e9539b0678ab8c755a17ff7b2d3c27a8a062c00094b325ceFAKE');
+global.lifx.setToken(process.env.API_TOKEN);
+console.log("Set TOKEN as: "+process.env.API_TOKEN);
 console.log(global.lifx);
