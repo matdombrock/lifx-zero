@@ -2,7 +2,7 @@
 # A Simple NodeJS API Wrapper For LIFX Lightbulbs
 This software is not an office LIFX product and I am not related to LIFX in any way shape or form. Do not blame me if something breaks. 
 
-Make sure to checkout the documentation for the official API at [https://api.developer.lifx.com/docs/](https://api.developer.lifx.com/docs/).
+Make sure to checkout the documentation for the official API at [https://api.developer.lifx.com/docs/](https://api.developer.lifx.com/docs/). 
 
 ## QUICK START
 ```js
