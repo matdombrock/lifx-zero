@@ -8,7 +8,7 @@ Make sure to checkout the documentation for the official API at [https://api.dev
 
 ## QUICK START
 ```js
-const lifx  =  require('api-wrapper-lifx');
+const lifx  =  require('lifx-red');
 lifx.setToken('cf7348414176e9539b0678ab8c77b2d3c27a8a062c00094b325ce054dIAMFAKE');
 
 //List all of your lights in JSON
@@ -21,11 +21,11 @@ list.then(function(data){
 ## INSTALL
 **Using GIT**
 ```bash
-git clone https://github.com/matdombrock/api-wrapper-lifx.git
+git clone https://github.com/matdombrock/lifx-red.git
 ```
 **Using NPM**
 ```bash
-npm install api-wrapper-lifx
+npm install lifx-red
 ```
 
 ## SETUP
@@ -38,7 +38,7 @@ lifx.setToken('cf7348414176e9539b0678ab8c77b2d3c27a8a062c00094b325ce054dIAMFAKE'
 ```
 **From NPM**
 ```js
-const lifx  =  require('api-wrapper-lifx');
+const lifx  =  require('api-red');
 lifx.setToken('cf7348414176e9539b0678ab8c77b2d3c27a8a062c00094b325ce054dIAMFAKE');
 ```
 
@@ -198,7 +198,7 @@ lifx.state.color("red");
 ## RETURNING DATA
 This wrapper uses "promises". Here is an example of how to return the response from the light to your main app.
 ```js
-const lifx  =  require('api-wrapper-lifx');
+const lifx  =  require('lifx-red');
 lifx.setToken('cf7348414176e9539b0678ab8c77b2d3c27a8a062c00094b325ce054dIAMFAKE');
 //setup the promise
 var newColor = lifx.state.color();
