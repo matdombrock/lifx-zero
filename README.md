@@ -4,6 +4,8 @@ This software is not an office LIFX product and I am not related to LIFX in any 
 
 Make sure to checkout the documentation for the official API at [https://api.developer.lifx.com/docs/](https://api.developer.lifx.com/docs/). 
 
+**NOTE:** I still have not implemented the full API yet, but I'm working on it.
+
 ## QUICK START
 ```js
 const lifx  =  require('./LIFX-Wrapper');
