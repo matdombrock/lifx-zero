@@ -211,7 +211,14 @@ newColor.then(function(data){
 ## INTERACTIVE MODE
 I have created an NPM script for "Interactive Mode". This loads the wrapper module and sets your key.  
 To enter "Interactive Mode" run:
+
+**FROM GITHUB**
 ```bash
+npm run interactive
+```
+**FROM NPM**
+```bash
+cd node_mobules/lifx-red
 npm run interactive
 ```
 **NOTE:** Make sure you create a ```.env``` file set the token value or this will not work. See ```.env.example```. If you installed this module through NPM, you will need to create the ```.env``` file inside of the ```./node_modules/api-wrapper-lifx``` subdirectory.
