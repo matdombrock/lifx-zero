@@ -33,11 +33,10 @@ setToken(<token>);
 ```js
 lifx.setToken('cf7348414176e9539b0678ab8c77b2d3c27a8a062c00094b325ce054dIAMFAKE');
 ```
-
 **Arguments** 
 * Token [Required] - The token you created at [https://cloud.lifx.com/settings](https://cloud.lifx.com/settings).
 
-
+-------
 ## *list*
 ```js
 list(<selector>);
@@ -60,6 +59,7 @@ specific.then(function(data){
 **Arguments** 
 * Selector [Optional] - The selector you want to use ([https://api.developer.lifx.com/docs/selectors](https://api.developer.lifx.com/docs/selectors)). Defaults to "all".
 
+-------
 ## *power.on*
 ```js
 power.on(<selector>);
@@ -73,6 +73,7 @@ lifx.power.on();
 **Arguments** 
 * Selector [Optional] - The selector you want to use ([https://api.developer.lifx.com/docs/selectors](https://api.developer.lifx.com/docs/selectors)). Defaults to "all".
 
+-------
 ## *power.off*
 ```js
 power.off(<selector>);
@@ -86,6 +87,7 @@ lifx.power.off();
 **Arguments** 
 * Selector [Optional] - The selector you want to use ([https://api.developer.lifx.com/docs/selectors](https://api.developer.lifx.com/docs/selectors)). Defaults to "all".
 
+-------
 ## *power.toggle*
 ```js
 power.toggle(<selector>);
@@ -99,6 +101,7 @@ lifx.power.toggle();
 **Arguments** 
 * Selector [Optional] - The selector you want to use ([https://api.developer.lifx.com/docs/selectors](https://api.developer.lifx.com/docs/selectors)). Defaults to "all".
 
+-------
 ## *state.full*
 ```js
 state.full(<state>, <selector>);
@@ -119,6 +122,7 @@ lifx.state.full(newState);
 * State [Required] - A JSON object representing the new state ([https://api.developer.lifx.com/docs/set-state](https://api.developer.lifx.com/docs/set-state)).
 * Selector [Optional] - The selector you want to use ([https://api.developer.lifx.com/docs/selectors](https://api.developer.lifx.com/docs/selectors)). Defaults to "all".
 
+-------
 ## *state.brightness*
 ```js
 state.brightness(<brightness>, <selector>);
@@ -133,6 +137,7 @@ lifx.state.brightness(0.5);
 * Brightness [Required] - A float value between ```0.0``` and ```1.0```.
 * Selector [Optional] - The selector you want to use ([https://api.developer.lifx.com/docs/selectors](https://api.developer.lifx.com/docs/selectors)). Defaults to "all".
 
+-------
 ## *state.color*
 ```js
 state.color(<color>, <selector>);
