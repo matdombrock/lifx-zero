@@ -2,10 +2,13 @@
 # A Simple NodeJS API Wrapper For LIFX Lightbulbs
 This software is not an office LIFX product and I am not related to LIFX in any way shape or form. Do not blame me if something breaks. 
 
+Make sure to checkout the documentation for the official API at [https://api.developer.lifx.com/docs/](https://api.developer.lifx.com/docs/).
+
 ## QUICK START
 ```js
 const lifx  =  require('./LIFX-Wrapper');
 lifx.setToken('cf7348414176e9539b0678ab8c77b2d3c27a8a062c00094b325ce054dIAMFAKE');
+
 //List all of your lights in JSON
 var list = lifx.list();
 list.then(function(data){
