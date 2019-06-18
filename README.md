@@ -8,7 +8,7 @@ Make sure to checkout the documentation for the official API at [https://api.dev
 
 ## QUICK START
 ```js
-const lifx  =  require('lifx-red');
+const lifx  =  require('lifx-zero');
 lifx.setToken('cf7348414176e9539b0678ab8c77b2d3c27a8a062c00094b325ce054dIAMFAKE');
 
 //List all of your lights in JSON
@@ -21,11 +21,11 @@ list.then(function(data){
 ## INSTALL
 **Using GIT**
 ```bash
-git clone https://github.com/matdombrock/lifx-red.git
+git clone https://github.com/matdombrock/lifx-zero.git
 ```
 **Using NPM**
 ```bash
-npm install lifx-red
+npm install lifx-zero
 ```
 
 ## SETUP
@@ -198,7 +198,7 @@ lifx.state.color("red");
 ## RETURNING DATA
 This wrapper uses "promises". Here is an example of how to return the response from the light to your main app.
 ```js
-const lifx  =  require('lifx-red');
+const lifx  =  require('lifx-zero');
 lifx.setToken('cf7348414176e9539b0678ab8c77b2d3c27a8a062c00094b325ce054dIAMFAKE');
 //setup the promise
 var newColor = lifx.state.color();
@@ -218,7 +218,7 @@ npm run interactive
 ```
 **FROM NPM**
 ```bash
-cd node_modules/lifx-red
+cd node_modules/lifx-zero
 npm run interactive
 ```
 **NOTE:** Make sure you create a ```.env``` file set the token value or this will not work. See ```.env.example```. If you installed this module through NPM, you will need to create the ```.env``` file inside of the ```./node_modules/api-wrapper-lifx``` subdirectory.
