@@ -59,7 +59,7 @@ specific.then(function(data){
 ```
 **Example Object**
 
-```json
+```js
 {
 	id: 'd0FAKE2cFAKE',
 	uuid: '0230f455-FAKE-492c-af6d-de7a922fFAKE',
