@@ -218,7 +218,7 @@ npm run interactive
 ```
 **FROM NPM**
 ```bash
-cd node_mobules/lifx-red
+cd node_modules/lifx-red
 npm run interactive
 ```
 **NOTE:** Make sure you create a ```.env``` file set the token value or this will not work. See ```.env.example```. If you installed this module through NPM, you will need to create the ```.env``` file inside of the ```./node_modules/api-wrapper-lifx``` subdirectory.
