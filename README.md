@@ -29,6 +29,7 @@ git clone https://github.com/matdombrock/lifx-zero.git
 ```bash
 npm install lifx-zero
 ```
+**NOTE:** The project is currently at ```@mdombrock/lifx-zero``` because of temporary publishing issues.
 
 ## SETUP
 To get started, just require the API wrapper and set your [Auth Token](https://cloud.lifx.com/settings).
