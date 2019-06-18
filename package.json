@@ -1,5 +1,5 @@
 {
-  "name": "lifx-zero",
+  "name": "@mdombrock/lifx-zero",
   "version": "1.0.0",
   "description": "",
   "main": "lifxWrapper.js",
@@ -8,7 +8,7 @@
     "interactive": "node -i -r ./tools/interactive.js"
   },
   "author": "",
-  "license": "ISC",
+  "license": "GPL 3",
   "dependencies": {
     "dotenv": "^8.0.0",
     "request-promise": "^4.2.4"
