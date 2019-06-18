@@ -12,7 +12,7 @@ const lifx  =  require('./LIFX-Wrapper');
 lifx.setToken('cf7348414176e9539b0678ab8c77b2d3c27a8a062c00094b325ce054dIAMFAKE');
 
 //List all of your lights in JSON
-var list = lifx.list();
+var list = lifx.list.full();
 list.then(function(data){
 	console.log(data);
 })
@@ -39,20 +39,20 @@ lifx.setToken('cf7348414176e9539b0678ab8c77b2d3c27a8a062c00094b325ce054dIAMFAKE'
 * Token [Required] - The token you created at [https://cloud.lifx.com/settings](https://cloud.lifx.com/settings).
 
 -------
-## *```list```*
+## *```list.full```*
 ```js
-list(<selector>);
+list.full(<selector>);
 ```
 **Example**
 
 ```js
 //List All Lights
-var list = lifx.list();
+var list = lifx.list.full();
 list.then(function(data){
 	console.log(data);
 })
 //List A Specific Light
-var specific = lifx.list("My Light");
+var specific = lifx.list.full("My Light");
 specific.then(function(data){
 	console.log(data);
 })
