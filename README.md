@@ -19,8 +19,6 @@ list.then(function(data){
 ```
  
 ## INSTALL
-To get started, just require the API wrapper and set your [Auth Token](https://cloud.lifx.com/settings).
-
 **Using GIT**
 ```bash
 git clone https://github.com/matdombrock/api-wrapper-lifx.git
@@ -31,6 +29,7 @@ npm install api-wrapper-lifx
 ```
 
 ## SETUP
+To get started, just require the API wrapper and set your [Auth Token](https://cloud.lifx.com/settings).
 **From GIT**
 ```js
 const lifx  =  require('./lifxWrapper');
