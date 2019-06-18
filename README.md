@@ -1,4 +1,3 @@
-
 # LIFX-ZERO
 A (Hopefully) Better NodeJS API Wrapper For LIFX Lightbulbs.
 

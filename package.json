@@ -1,13 +1,18 @@
 {
   "name": "@mdombrock/lifx-zero",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "",
   "main": "lifxWrapper.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "interactive": "node -i -r ./tools/interactive.js"
   },
-  "author": "",
+  "author": "Mathieu Dombrock",
+  "homepage": "https://github.com/matdombrock/lifx-zero",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/matdombrock/lifx-zero.git"
+  },
   "license": "GPL 3",
   "dependencies": {
     "dotenv": "^8.0.0",
