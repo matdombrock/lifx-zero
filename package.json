@@ -1,5 +1,5 @@
 {
-  "name": "lifx-api-wrapper",
+  "name": "api-wrapper-lifx",
   "version": "1.0.0",
   "description": "",
   "main": "lifxWrapper.js",
