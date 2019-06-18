@@ -57,6 +57,30 @@ specific.then(function(data){
 	console.log(data);
 })
 ```
+**Example Object**
+
+```js
+{
+	id: 'd0FAKE2cFAKE',
+	uuid: '0230f455-FAKE-492c-af6d-de7a922fFAKE',
+	label: 'Overhead',
+	connected: true,
+	power: 'on',
+	color: { hue: 0, saturation: 1, kelvin: 3500 },
+	brightness: 0.49999237048905165,
+	effect: 'OFF',
+	group: { id: '0ccdFAKE2c07c5af81da4b58b523FAKE', name: 'Mats Office' },
+	location: { id: '9f0f6bFAKE29ad81bfFAKEa2a69dFAKE', name: 'Home' },
+	product: {
+		name: 'LIFX A19',
+		identifier: 'lifx_a19',
+		company: 'LIFX',
+		capabilities: [Object]
+	},
+	last_seen: '2019-06-18T12:46:47Z',
+	seconds_since_seen: 2
+}
+```
 
 **Arguments** 
 * Selector [Optional] - The selector you want to use ([https://api.developer.lifx.com/docs/selectors](https://api.developer.lifx.com/docs/selectors)). Defaults to "all".
