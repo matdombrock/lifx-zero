@@ -221,4 +221,4 @@ npm run interactive
 cd node_modules/lifx-zero
 npm run interactive
 ```
-**NOTE:** Make sure you create a ```.env``` file set the token value or this will not work. See ```.env.example```. If you installed this module through NPM, you will need to create the ```.env``` file inside of the ```./node_modules/api-wrapper-lifx``` subdirectory.
+**NOTE:** Make sure you create a ```.env``` file set the token value or this will not work. See ```.env.example```. If you installed this module through NPM, you will need to create the ```.env``` file inside of the ```./node_modules/lifx-zero``` subdirectory.
