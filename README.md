@@ -7,7 +7,7 @@ Make sure to checkout the documentation for the official API at [https://api.dev
 
 **NOTE:** I still have not implemented the full API yet, but I'm working on it.
 
-## QUICK START
+# QUICK START
 ```js
 const lifx  =  require('lifx-zero');
 lifx.setToken('cf7348414176e9539b0678ab8c77b2d3c27a8a062c00094b325ce054dIAMFAKE');
@@ -19,7 +19,7 @@ list.then(function(data){
 })
 ```
  
-## INSTALL
+# INSTALL
 **Using GIT**
 ```bash
 git clone https://github.com/matdombrock/lifx-zero.git
@@ -30,7 +30,7 @@ npm install lifx-zero
 ```
 **NOTE:** The project is currently at ```@mdombrock/lifx-zero``` because of temporary publishing issues.
 
-## SETUP
+# SETUP
 To get started, just require the API wrapper and set your [Auth Token](https://cloud.lifx.com/settings).
 
 **From GIT**
@@ -44,8 +44,8 @@ const lifx  =  require('api-red');
 lifx.setToken('cf7348414176e9539b0678ab8c77b2d3c27a8a062c00094b325ce054dIAMFAKE');
 ```
 
-## METHODS
-## *```setToken```*
+# METHODS
+# setToken()
 ```js
 setToken(<token:string>);
 ```
@@ -58,7 +58,7 @@ lifx.setToken('cf7348414176e9539b0678ab8c77b2d3c27a8a062c00094b325ce054dIAMFAKE'
 ```
 
 -------
-## *```list```*
+# list()
 ```js
 list(<selector:string>);
 ```
@@ -103,7 +103,7 @@ specific.then(function(data){
 ```
 
 -------
-## *```togglePower```*
+# togglePower()
 ```js
 togglePower(<selector:string>);
 ```
@@ -115,7 +115,7 @@ lifx.togglePower();
 ```
 
 -------
-## *```state```*
+# state()
 ```js
 state(<state:object>, <selector:string>);
 ```
@@ -134,7 +134,7 @@ lifx.state(newState);
 ```
 
 -------
-## *```effects.breathe```*
+# effects.breathe()
 ```js
 effects.breath(<data:object>, <selector:string>);
 ```
@@ -153,7 +153,7 @@ var newData = {
 lifx.effects.breath(newData);
 ```
 
-## RETURNING DATA
+# RETURNING DATA
 This wrapper uses "promises". Here is an example of how to return the response from the light to your main app.
 ```js
 const lifx  =  require('lifx-zero');
@@ -166,7 +166,7 @@ newColor.then(function(data){
 })
 ```
 
-## INTERACTIVE MODE
+# INTERACTIVE MODE
 I have created an NPM script for "Interactive Mode". This loads the wrapper module and sets your key.  
 To enter "Interactive Mode" run:
 
