@@ -13,7 +13,7 @@ Make sure to checkout the documentation for the official API at [https://api.dev
 	* [setToken()](#settoken)
 	* [list()](#list)
 	* [state()](#state)
-	* [effects.breathe()](#effectsbreathe)
+	* [breatheEffect()](#breatheeffect)
 * [Returning Data](#returning-data)
 * [Interactive Mode](#interactive-mode)
 
@@ -144,9 +144,9 @@ lifx.state(newState);
 ```
 
 -------
-# effects.breathe()
+# breatheEffect()
 ```js
-effects.breath(<data:object>, <selector:string>);
+breatheEffect(<data:object>, <selector:string>);
 ```
 * Data [Required] - A JSON object representing the breath effect you want to set ([https://api.developer.lifx.com/docs/breathe-effect](https://api.developer.lifx.com/docs/breathe-effect)).
 * Selector [Optional] - The selector you want to use ([https://api.developer.lifx.com/docs/selectors](https://api.developer.lifx.com/docs/selectors)). Defaults to "all".
@@ -160,7 +160,7 @@ var newData = {
 	"power_on": true,
 	"peak": 0.4
 }
-lifx.effects.breath(newData);
+lifx.breatheEffect(newData);
 ```
 
 # RETURNING DATA
