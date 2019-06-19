@@ -13,7 +13,7 @@ const lifx  =  require('lifx-zero');
 lifx.setToken('cf7348414176e9539b0678ab8c77b2d3c27a8a062c00094b325ce054dIAMFAKE');
 
 //List all of your lights in JSON
-var list = lifx.list.full();
+var list = lifx.list();
 list.then(function(data){
 	console.log(data);
 })
@@ -49,29 +49,30 @@ lifx.setToken('cf7348414176e9539b0678ab8c77b2d3c27a8a062c00094b325ce054dIAMFAKE'
 ```js
 setToken(<token>);
 ```
+* Token [Required] - The token you created at [https://cloud.lifx.com/settings](https://cloud.lifx.com/settings).
+
 **Example**
 
 ```js
 lifx.setToken('cf7348414176e9539b0678ab8c77b2d3c27a8a062c00094b325ce054dIAMFAKE');
 ```
-**Arguments** 
-* Token [Required] - The token you created at [https://cloud.lifx.com/settings](https://cloud.lifx.com/settings).
 
 -------
-## *```list.full```*
+## *```list```*
 ```js
-list.full(<selector>);
+list(<selector>);
 ```
+* Selector [Optional] - The selector you want to use ([https://api.developer.lifx.com/docs/selectors](https://api.developer.lifx.com/docs/selectors)). Defaults to "all".
 **Example**
 
 ```js
 //List All Lights
-var list = lifx.list.full();
+var list = lifx.list();
 list.then(function(data){
 	console.log(data);
 })
 //List A Specific Light
-var specific = lifx.list.full("My Light");
+var specific = lifx.list("Overhead");
 specific.then(function(data){
 	console.log(data);
 })
@@ -101,8 +102,17 @@ specific.then(function(data){
 }
 ```
 
-**Arguments** 
+-------
+## *```togglePower```*
+```js
+togglePower(<selector>);
+```
 * Selector [Optional] - The selector you want to use ([https://api.developer.lifx.com/docs/selectors](https://api.developer.lifx.com/docs/selectors)). Defaults to "all".
+**Example**
+
+```js
+lifx.togglePower();
+```
 
 -------
 ## *```power.on```*
@@ -127,20 +137,6 @@ power.off(<selector>);
 
 ```js
 lifx.power.off();
-```
-
-**Arguments** 
-* Selector [Optional] - The selector you want to use ([https://api.developer.lifx.com/docs/selectors](https://api.developer.lifx.com/docs/selectors)). Defaults to "all".
-
--------
-## *```power.toggle```*
-```js
-power.toggle(<selector>);
-```
-**Example**
-
-```js
-lifx.power.toggle();
 ```
 
 **Arguments** 
