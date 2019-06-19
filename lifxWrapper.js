@@ -70,9 +70,8 @@ exports.state = async function (state, selector="all"){
         return err;
     });
 }
-exports.effects = {};
 //https://api.developer.lifx.com/docs/effects-off
-exports.effects.off = async function(power_off=false, selector="all"){
+exports.effectsOff = async function(power_off=false, selector="all"){
     const options = {  
         url: api_url+'lights/'+selector+'/effects/off',
         method: 'POST',
@@ -94,7 +93,7 @@ exports.effects.off = async function(power_off=false, selector="all"){
     });
 }
 //https://api.developer.lifx.com/docs/breathe-effect
-exports.effects.breathe = async function(data = {"color": "blue","period": 1,"cycles": 1,"persist": false,"power_on": true,"peak": 0.4}, selector="all"){
+exports.breatheEffect = async function(data = {"color": "blue","period": 1,"cycles": 1,"persist": false,"power_on": true,"peak": 0.4}, selector="all"){
     /*{"color": "blue","period": 1,"cycles": 1,"persist": false,"power_on": true,"peak": 0.4}*/
     const options = {  
         url: api_url+'lights/'+selector+'/effects/breathe',
