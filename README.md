@@ -7,7 +7,15 @@ Make sure to checkout the documentation for the official API at [https://api.dev
 
 **NOTE:** I still have not implemented the full API yet, but I'm working on it.
 
-[install](#install)
+* [Install](#install)
+* [Setup](#setup)
+* [Methods](#methods)
+	* [setToken()](#settoken)
+	* [list()](#list)
+	* [state()](#state)
+	* [effects.breathe()](#effectsbreathe)
+* [Returning Data](#returning-data)
+* [Interactive Mode](#interactive-mode)
 
 # QUICK START
 ```js
