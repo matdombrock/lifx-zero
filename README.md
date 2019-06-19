@@ -1,5 +1,5 @@
 # LIFX-ZERO
-A (Hopefully) Better NodeJS API Wrapper For LIFX light bulbs.
+A (Hopefully) Better NodeJS API Wrapper For LIFX Lightbulbs.
 
 This software is not an official LIFX product and I am not related to LIFX in any way shape or form. Do not blame me if something breaks. 
 
@@ -195,6 +195,29 @@ lifx.state.color("red");
 
 **Arguments** 
 * Color [Required] - A color value. Checkout [https://api.developer.lifx.com/v1/docs/colors](https://api.developer.lifx.com/v1/docs/colors) to see everything you can do with this (it's a lot).
+* Selector [Optional] - The selector you want to use ([https://api.developer.lifx.com/docs/selectors](https://api.developer.lifx.com/docs/selectors)). Defaults to "all".
+
+-------
+## *```effects.breathe.full```*
+```js
+effects.breath.full(<data>, <selector>);
+```
+**Example**
+
+```js
+var newData = {
+	"color": "blue",
+	"period": 1,
+	"cycles": 1,
+	"persist": false,
+	"power_on": true,
+	"peak": 0.4
+}
+lifx.effects.breath.full(newData);
+```
+
+**Arguments** 
+* Data [Required] - A JSON object representing the breath effect you want to set ([https://api.developer.lifx.com/docs/breathe-effect](https://api.developer.lifx.com/docs/breathe-effect)).
 * Selector [Optional] - The selector you want to use ([https://api.developer.lifx.com/docs/selectors](https://api.developer.lifx.com/docs/selectors)). Defaults to "all".
 
 ## RETURNING DATA

@@ -7,7 +7,6 @@ exports.setToken = function(user_token){
     var pre = "Bearer ";
     token = pre+user_token;
 };
-
 //LIST
 exports.list = {};
 exports.list.full = function (selector="all"){
@@ -27,7 +26,6 @@ exports.list.full = function (selector="all"){
         return err;
     });
 }
-
 //POWER
 exports.power = {};
 exports.power.on = function (selector="all"){
@@ -50,7 +48,6 @@ exports.power.on = function (selector="all"){
         return err;
     });
 }
-
 exports.power.off = function (selector="all"){
     const options = {  
         url: api_url+'lights/'+selector+'/state',
@@ -71,7 +68,6 @@ exports.power.off = function (selector="all"){
         return err;
     });
 }
-
 exports.power.toggle = function (selector="all"){
     const options = {  
         url: api_url+'lights/'+selector+'/toggle',
@@ -89,10 +85,9 @@ exports.power.toggle = function (selector="all"){
         return err;
     });
 }
-
 //STATE
 exports.state = {};
-exports.state.full = function (state, selector="all"){
+exports.state.full = async function (state, selector="all"){
     const options = {  
         url: api_url+'lights/'+selector+'/state',
         method: 'PUT',
@@ -110,42 +105,39 @@ exports.state.full = function (state, selector="all"){
         return err;
     });
 }
-
 exports.state.brightness = async function (brightness, selector="all"){
-    const options = {  
-        url: api_url+'lights/'+selector+'/state',
-        method: 'PUT',
-        headers: {
-            'Authorization': token,
-        },
-        form: {
-            'power':'on',
-            'brightness': brightness,
-            'duration': 0
-        },
+    var newState = {
+        'brightness':brightness
     };
-    return request(options)
-    .then(function(parsedBody){
-        return JSON.parse(parsedBody);
-    })
-    .catch(function (err) {
-        // POST failed...
-        return err;
-    });
+    return module.exports.state.full(newState, selector);
 }
-
 exports.state.color = async function (color, selector="all"){
+    var newState = {
+        'color':color
+    };
+    return module.exports.state.full(newState, selector);
+}
+//EFFECTS
+exports.effects = {};
+exports.effects.breathe = async function(state, selector="all"){
+    /*
+    {"color": "blue","period": 1,"cycles": 1,"persist": false,"power_on": true,"peak": 0.4}
+    {
+        "color": "blue",
+        "period": 1,
+        "cycles": 1,
+        "persist": false,
+        "power_on": true,
+        "peak": 0.4
+    }
+    */
     const options = {  
-        url: api_url+'lights/'+selector+'/state',
-        method: 'PUT',
+        url: api_url+'lights/'+selector+'/effects/breathe',
+        method: 'POST',
         headers: {
             'Authorization': token,
         },
-        form: {
-            'power':'on',
-            'color':color,
-            'duration': 0
-        },
+        form: state,
     };
     return request(options)
     .then(function(parsedBody){

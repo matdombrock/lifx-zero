@@ -1,5 +1,8 @@
 const lifx = require('./lifxWrapper');
-
+//token
+exports.token = function(token){
+    return lifx.setToken(token);
+}
 //power
 exports.on = function(){
     return lifx.power.on();
