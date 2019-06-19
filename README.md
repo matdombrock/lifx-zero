@@ -36,9 +36,9 @@ git clone https://github.com/matdombrock/lifx-zero.git
 ```
 **Using NPM**
 ```bash
-//stable
+# stable
 npm install lifx-zero
-//latest
+# latest
 npm install @mdombrock/lifx-zero
 ```
 
