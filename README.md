@@ -9,7 +9,7 @@ Make sure to checkout the documentation for the official API at [https://api.dev
 
 * [Install](#install)
 * [Setup](#setup)
-* [Methods](#methods)
+* [Main Wrapper Methods](#methods)
 	* [setToken()](#settoken)
 	* [list()](#list)
 	* [state()](#state)
@@ -54,7 +54,7 @@ const lifx  =  require('api-red');
 lifx.setToken('cf7348414176e9539b0678ab8c77b2d3c27a8a062c00094b325ce054dIAMFAKE');
 ```
 
-# METHODS
+# MAIN WRAPPER METHODS
 # setToken()
 ```js
 setToken(<token:string>);
