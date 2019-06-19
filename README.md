@@ -7,6 +7,8 @@ Make sure to checkout the documentation for the official API at [https://api.dev
 
 **NOTE:** I still have not implemented the full API yet, but I'm working on it.
 
+[install](#install)
+
 # QUICK START
 ```js
 const lifx  =  require('lifx-zero');
