@@ -119,6 +119,7 @@ exports.state.color = async function (color, selector="all"){
 }
 //EFFECTS
 exports.effects = {};
+exports.effects.breathe = {};
 exports.effects.breathe.full = async function(data, selector="all"){
     const options = {  
         url: api_url+'lights/'+selector+'/effects/breathe',
