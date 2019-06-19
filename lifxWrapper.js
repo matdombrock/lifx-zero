@@ -119,25 +119,14 @@ exports.state.color = async function (color, selector="all"){
 }
 //EFFECTS
 exports.effects = {};
-exports.effects.breathe = async function(state, selector="all"){
-    /*
-    {"color": "blue","period": 1,"cycles": 1,"persist": false,"power_on": true,"peak": 0.4}
-    {
-        "color": "blue",
-        "period": 1,
-        "cycles": 1,
-        "persist": false,
-        "power_on": true,
-        "peak": 0.4
-    }
-    */
+exports.effects.breathe.full = async function(data, selector="all"){
     const options = {  
         url: api_url+'lights/'+selector+'/effects/breathe',
         method: 'POST',
         headers: {
             'Authorization': token,
         },
-        form: state,
+        form: data,
     };
     return request(options)
     .then(function(parsedBody){
