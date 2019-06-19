@@ -9,7 +9,7 @@ Make sure to checkout the documentation for the official API at [https://api.dev
 
 * [Install](#install)
 * [Setup](#setup)
-* [Main Wrapper Methods](#methods)
+* [Main Wrapper Methods](#mainwrappermethods)
 	* [setToken()](#settoken)
 	* [list()](#list)
 	* [state()](#state)
