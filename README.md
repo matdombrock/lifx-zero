@@ -153,65 +153,6 @@ var newData = {
 lifx.effects.breath(newData);
 ```
 
--------
-## *```power.on```*
-```js
-power.on(<selector>);
-```
-**Example**
-
-```js
-lifx.power.on();
-```
-
-**Arguments** 
-* Selector [Optional] - The selector you want to use ([https://api.developer.lifx.com/docs/selectors](https://api.developer.lifx.com/docs/selectors)). Defaults to "all".
-
--------
-## *```power.off```*
-```js
-power.off(<selector>);
-```
-**Example**
-
-```js
-lifx.power.off();
-```
-
-**Arguments** 
-* Selector [Optional] - The selector you want to use ([https://api.developer.lifx.com/docs/selectors](https://api.developer.lifx.com/docs/selectors)). Defaults to "all".
-
--------
-## *```state.brightness```*
-```js
-state.brightness(<brightness>, <selector>);
-```
-**Example**
-
-```js
-lifx.state.brightness(0.5);
-```
-
-**Arguments** 
-* Brightness [Required] - A float value between ```0.0``` and ```1.0```.
-* Selector [Optional] - The selector you want to use ([https://api.developer.lifx.com/docs/selectors](https://api.developer.lifx.com/docs/selectors)). Defaults to "all".
-
--------
-## *```state.color```*
-```js
-state.color(<color>, <selector>);
-```
-**Example**
-
-```js
-lifx.state.color("red");
-```
-
-**Arguments** 
-* Color [Required] - A color value. Checkout [https://api.developer.lifx.com/v1/docs/colors](https://api.developer.lifx.com/v1/docs/colors) to see everything you can do with this (it's a lot).
-* Selector [Optional] - The selector you want to use ([https://api.developer.lifx.com/docs/selectors](https://api.developer.lifx.com/docs/selectors)). Defaults to "all".
-
-
 ## RETURNING DATA
 This wrapper uses "promises". Here is an example of how to return the response from the light to your main app.
 ```js
