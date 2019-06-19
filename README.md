@@ -152,7 +152,7 @@ breatheEffect(<data:object>, <selector:string>);
 * Selector [Optional] - The selector you want to use ([https://api.developer.lifx.com/docs/selectors](https://api.developer.lifx.com/docs/selectors)). Defaults to "all".
 **Example**
 ```js
-var newData = {
+var newBreath = {
 	"color": "blue",
 	"period": 1,
 	"cycles": 1,
@@ -160,7 +160,7 @@ var newData = {
 	"power_on": true,
 	"peak": 0.4
 }
-lifx.breatheEffect(newData);
+lifx.breatheEffect(newBreath);
 ```
 
 # RETURNING DATA
