@@ -115,6 +115,45 @@ lifx.togglePower();
 ```
 
 -------
+## *```state```*
+```js
+state(<state>, <selector>);
+```
+* State [Required] - A JSON object representing the new state ([https://api.developer.lifx.com/docs/set-state](https://api.developer.lifx.com/docs/set-state)).
+* Selector [Optional] - The selector you want to use ([https://api.developer.lifx.com/docs/selectors](https://api.developer.lifx.com/docs/selectors)). Defaults to "all".
+**Example**
+
+```js
+var newState = {
+	"power": "on",
+	"color": "blue saturation:0.5",
+	"brightness": 0.5,
+	"duration": 5,
+}
+lifx.state(newState);
+```
+
+-------
+## *```effects.breathe```*
+```js
+effects.breath(<data>, <selector>);
+```
+* Data [Required] - A JSON object representing the breath effect you want to set ([https://api.developer.lifx.com/docs/breathe-effect](https://api.developer.lifx.com/docs/breathe-effect)).
+* Selector [Optional] - The selector you want to use ([https://api.developer.lifx.com/docs/selectors](https://api.developer.lifx.com/docs/selectors)). Defaults to "all".
+**Example**
+```js
+var newData = {
+	"color": "blue",
+	"period": 1,
+	"cycles": 1,
+	"persist": false,
+	"power_on": true,
+	"peak": 0.4
+}
+lifx.effects.breath(newData);
+```
+
+-------
 ## *```power.on```*
 ```js
 power.on(<selector>);
@@ -140,27 +179,6 @@ lifx.power.off();
 ```
 
 **Arguments** 
-* Selector [Optional] - The selector you want to use ([https://api.developer.lifx.com/docs/selectors](https://api.developer.lifx.com/docs/selectors)). Defaults to "all".
-
--------
-## *```state.full```*
-```js
-state.full(<state>, <selector>);
-```
-**Example**
-
-```js
-var newState = {
-	"power": "on",
-	"color": "blue saturation:0.5",
-	"brightness": 0.5,
-	"duration": 5,
-}
-lifx.state.full(newState);
-```
-
-**Arguments** 
-* State [Required] - A JSON object representing the new state ([https://api.developer.lifx.com/docs/set-state](https://api.developer.lifx.com/docs/set-state)).
 * Selector [Optional] - The selector you want to use ([https://api.developer.lifx.com/docs/selectors](https://api.developer.lifx.com/docs/selectors)). Defaults to "all".
 
 -------
@@ -193,28 +211,6 @@ lifx.state.color("red");
 * Color [Required] - A color value. Checkout [https://api.developer.lifx.com/v1/docs/colors](https://api.developer.lifx.com/v1/docs/colors) to see everything you can do with this (it's a lot).
 * Selector [Optional] - The selector you want to use ([https://api.developer.lifx.com/docs/selectors](https://api.developer.lifx.com/docs/selectors)). Defaults to "all".
 
--------
-## *```effects.breathe.full```*
-```js
-effects.breath.full(<data>, <selector>);
-```
-**Example**
-
-```js
-var newData = {
-	"color": "blue",
-	"period": 1,
-	"cycles": 1,
-	"persist": false,
-	"power_on": true,
-	"peak": 0.4
-}
-lifx.effects.breath.full(newData);
-```
-
-**Arguments** 
-* Data [Required] - A JSON object representing the breath effect you want to set ([https://api.developer.lifx.com/docs/breathe-effect](https://api.developer.lifx.com/docs/breathe-effect)).
-* Selector [Optional] - The selector you want to use ([https://api.developer.lifx.com/docs/selectors](https://api.developer.lifx.com/docs/selectors)). Defaults to "all".
 
 ## RETURNING DATA
 This wrapper uses "promises". Here is an example of how to return the response from the light to your main app.
