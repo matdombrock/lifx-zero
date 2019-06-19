@@ -47,7 +47,7 @@ lifx.setToken('cf7348414176e9539b0678ab8c77b2d3c27a8a062c00094b325ce054dIAMFAKE'
 ## METHODS
 ## *```setToken```*
 ```js
-setToken(<token>);
+setToken(<token:string>);
 ```
 * Token [Required] - The token you created at [https://cloud.lifx.com/settings](https://cloud.lifx.com/settings).
 
@@ -60,7 +60,7 @@ lifx.setToken('cf7348414176e9539b0678ab8c77b2d3c27a8a062c00094b325ce054dIAMFAKE'
 -------
 ## *```list```*
 ```js
-list(<selector>);
+list(<selector:string>);
 ```
 * Selector [Optional] - The selector you want to use ([https://api.developer.lifx.com/docs/selectors](https://api.developer.lifx.com/docs/selectors)). Defaults to "all".
 **Example**
@@ -105,7 +105,7 @@ specific.then(function(data){
 -------
 ## *```togglePower```*
 ```js
-togglePower(<selector>);
+togglePower(<selector:string>);
 ```
 * Selector [Optional] - The selector you want to use ([https://api.developer.lifx.com/docs/selectors](https://api.developer.lifx.com/docs/selectors)). Defaults to "all".
 **Example**
@@ -117,7 +117,7 @@ lifx.togglePower();
 -------
 ## *```state```*
 ```js
-state(<state>, <selector>);
+state(<state:object>, <selector:string>);
 ```
 * State [Required] - A JSON object representing the new state ([https://api.developer.lifx.com/docs/set-state](https://api.developer.lifx.com/docs/set-state)).
 * Selector [Optional] - The selector you want to use ([https://api.developer.lifx.com/docs/selectors](https://api.developer.lifx.com/docs/selectors)). Defaults to "all".
@@ -136,7 +136,7 @@ lifx.state(newState);
 -------
 ## *```effects.breathe```*
 ```js
-effects.breath(<data>, <selector>);
+effects.breath(<data:object>, <selector:string>);
 ```
 * Data [Required] - A JSON object representing the breath effect you want to set ([https://api.developer.lifx.com/docs/breathe-effect](https://api.developer.lifx.com/docs/breathe-effect)).
 * Selector [Optional] - The selector you want to use ([https://api.developer.lifx.com/docs/selectors](https://api.developer.lifx.com/docs/selectors)). Defaults to "all".
