@@ -1,5 +1,5 @@
 # LIFX-ZERO
-A (Hopefully) Better NodeJS API Wrapper For LIFX Lightbulbs.
+A (Hopefully) Better NodeJS API Wrapper For LIFX light bulbs.
 
 This software is not an official LIFX product and I am not related to LIFX in any way shape or form. Do not blame me if something breaks. 
 
